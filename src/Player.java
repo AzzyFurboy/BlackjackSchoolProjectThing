@@ -12,6 +12,8 @@ public abstract class Player
     int stash;
     ArrayList<Card> hand;
 
+    int startingMoney;
+
     Logging log;
 
     /**
@@ -37,6 +39,7 @@ public abstract class Player
             log.logWarningMessage(e.getMessage());
         }
         hand = new ArrayList<>();
+        startingMoney = getStash();
     }
 
     /**

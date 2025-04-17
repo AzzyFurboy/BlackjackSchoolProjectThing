@@ -2,8 +2,8 @@ import java.util.Scanner;
 
 /**
  * Represents the table where you play blackjack at.
- * Features gameplay. Most methods are private cuz isn't that how its supposed to be.
- * I added Doubling Down for no reason, muchhh more of a pain than I had innially thought it would be.
+ * Features gameplay. Most methods are private cuz isn't that how it's supposed to be.
+ * I added Doubling Down for no reason, muchhh more of a pain than I had initially thought it would be.
  * It works though so thats all that really matters right.
  *
  * @author Gage Roush
@@ -70,10 +70,13 @@ public class BlackjackTable
             dealer.receiveCard(dealer.deal(), true);
             player.receiveCard(dealer.deal(), true);
             System.out.println(printScores());
+            // if the player gets a Blackjack on the first turn they get 1.5x the amount of money from what they bet
             if (player.scoreHand() == 21)
             {
                 System.out.println("You drew a blackjack ! You win !");
                 playerWins();
+                dealer.setStash(dealer.getStash() - bet/2);
+                player.setStash(player.getStash() + bet/2);
                 roundOver = true;
             }
 
@@ -103,10 +106,13 @@ public class BlackjackTable
             //if the game was a push the player doesn't get the chance to leave and another round is immediately started
             if(!wasPush)
             {
-                System.out.println("Would you like to keep playing?\nWins: " + winCount + "\nLosses: " + lossCount);
+                System.out.println("Would you like to keep playing? Y/N \nWins: " + winCount + "\nLosses: " + lossCount);
                 reply = scan.next();
             }
-        } while (reply.toLowerCase().startsWith("y") || wasPush);
+        } while (!(reply.toLowerCase().startsWith("n")) || wasPush); // had to change it to just accept anything that starts with 'n' cuz my brother typed "sure" and killed it
+        // End of the program/game
+        System.out.println("\n \nThanks for Playing !\n\tYou went into Mirage Casino with $" + player.startingMoney + " and left with $" + player.getStash() + "!");
+        System.exit(0);
     }
 
     /**
@@ -116,7 +122,7 @@ public class BlackjackTable
     {
         bet = 0;
 
-        System.out.println("Please make your bet.");
+        System.out.println("Please make your bet. \n You have $" + player.getStash());
 
             bet = scan.nextInt();
             if (bet < 0 && !wasPush)
@@ -236,18 +242,24 @@ public class BlackjackTable
         }
     }
 
+    /**
+     * What the player can do on their turn.
+     *
+     * Features . .
+     * Hitting, Staying, and Doubling Down ! ! !
+     */
     private void playerLogic()
     {
         String reply = "";
-        boolean exit;
+        boolean exit = false;
         do
         {
-            if(player.hand.size() == 2){ System.out.println("Hit, Stay, or Double Down?"); }
+            if(player.hand.size() == 2){ System.out.println("Hit, Stay, or Double?"); }
             else{ System.out.println("Hit or Stay?"); }
 
             reply = scan.next();
             //if the player hits
-            if (reply.equalsIgnoreCase("hit"))
+            if (reply.toLowerCase().equals("hit"))
             {
                 player.receiveCard(dealer.deal(), true);
                 System.out.println(printScores());
@@ -260,12 +272,13 @@ public class BlackjackTable
                 }
             }
             //if the player stays
-            else if (reply.equalsIgnoreCase("stay"))
+            else if (reply.toLowerCase().equals("stay"))
             {
                 System.out.println("You Stay\n");
+                exit = true;
             }
             //if the player says double
-            else if (reply.equalsIgnoreCase("double"))
+            else if (reply.toLowerCase().equals("double"))
             {
                 if(player.hand.size() == 2 && player.getStash() >= bet)
                 {
@@ -275,6 +288,7 @@ public class BlackjackTable
 
                     player.receiveCard(dealer.deal(), true);
                     System.out.println(printScores());
+                    exit = true;
                     if (player.scoreHand() > 21)
                     {
                         System.out.println("BUST ! \n You LOSE!");
@@ -300,11 +314,6 @@ public class BlackjackTable
                         " Stay means you don't want anymore cards. \n" +
                         " Double means I give you only one more card and you double your bet. ");
             }
-
-            exit = false;
-            if(reply.equalsIgnoreCase("double") || reply.equalsIgnoreCase("stay"))
-            {
-                exit = true;}
         } while (!exit);
     }
 
@@ -322,6 +331,10 @@ public class BlackjackTable
         }
     }
 
+    /**
+     * The dealer betting mechanics
+     * If the player bets more than the dealer has, the dealer goes "all-in", betting all their money and setting their stash to 0
+     */
     private void dealerBetting()
     {
         if(dealer.getStash() >= bet)

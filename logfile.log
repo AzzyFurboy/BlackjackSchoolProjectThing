@@ -12,3 +12,10 @@ WARNING: null
 Apr 16, 2025 12:11:41 PM Logging logWarningMessage
 WARNING: null
  Error when inputting bet
+Apr 16, 2025 4:12:21 PM Logging logWarningMessage
+WARNING: null
+ Error when inputting bet
+Apr 16, 2025 4:13:33 PM Logging logWarningMessage
+WARNING: Illegal Bet, more than player stash
+ Player Betted: 5000
+ Player Stash: 500
