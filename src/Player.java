@@ -1,3 +1,4 @@
+import javax.swing.*;
 import java.util.ArrayList;
 
 /**
@@ -12,9 +13,14 @@ public abstract class Player
     int stash;
     ArrayList<Card> hand;
 
+    JPanel cardPanel;
+    JLabel nameLabel;
+    JLabel stashLabel;
+    JLabel scoreLabel;
+
     int startingMoney;
 
-    Logging log;
+    Logging log = new Logging();
 
     /**
      * Constructor for objects of class Player
@@ -24,6 +30,11 @@ public abstract class Player
         name = "Player";
         stash = 500;
         hand = new ArrayList<>();
+
+        cardPanel = new JPanel();
+        nameLabel = new JLabel();
+        stashLabel = new JLabel();
+        scoreLabel = new JLabel();
     }
 
     /**
@@ -31,6 +42,11 @@ public abstract class Player
      */
     public Player(String name, int stash)
     {
+        cardPanel = new JPanel();
+        nameLabel = new JLabel();
+        stashLabel = new JLabel();
+        scoreLabel = new JLabel();
+
         this.name = name;
         try{ setStash(stash); }
         catch(Exception e)
@@ -61,6 +77,8 @@ public abstract class Player
             card.hide();
             hand.add(card);
         }
+        cardPanel.add(card.getCardLabel());
+        scoreLabel.setText(String.valueOf(scoreHand()));
     }
 
     /**
@@ -72,6 +90,7 @@ public abstract class Player
         if(stash >= 0)
         {
             this.stash = stash;
+            stashLabel.setText(String.valueOf(stash));
         }
     }
 
@@ -90,8 +109,43 @@ public abstract class Player
     public void clearHand()
     {
         hand.clear();
+        cardPanel.removeAll();
     }
 
+    /**
+     * @return nameLabel
+     */
+    public JLabel getNameLabel()
+    {
+        nameLabel.setText(name);
+        return nameLabel;
+    }
+
+    /**
+     * @return stashLabel
+     */
+    public JLabel getStashLabel()
+    {
+        stashLabel.setText("Stash: "+ String.valueOf(stash));
+        return stashLabel;
+    }
+
+    /**
+     * @return scoreLabel
+     */
+    public JLabel getScoreLabel()
+    {
+        scoreLabel.setText("Score: "+ String.valueOf(scoreHand()));
+        return scoreLabel;
+    }
+
+    /**
+     * @return cardPanel
+     */
+    public JPanel getCardPanel()
+    {
+        return cardPanel;
+    }
 
     int scoreHand() {
         return 0;
@@ -108,7 +162,7 @@ public abstract class Player
         }
     }
 
-    /*
+    /**
      * Return a string representing the player and the amount of money they have available
      */
     @Override

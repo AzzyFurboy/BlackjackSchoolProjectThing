@@ -9,7 +9,6 @@ public class Application
 {
     public static void main(String[] args)
     {
-        BlackjackTable blackjack = new BlackjackTable();
-        blackjack.play();
+        Blackjack bj = new Blackjack();
     }
 }
