@@ -40,18 +40,6 @@ public class Card implements Comparable<Card>
             this.suit = suit;
             this.visible = visible;
             this.name = name;
-
-            cardLabel = new JLabel();
-            cardLabel.setBackground(Color.WHITE);
-            File path = new File("images/"+getName().toLowerCase()+"_of_"+getSuit().toString().toLowerCase()+".png");
-
-            try{
-            face = ImageIO.read(path);
-            back = ImageIO.read(new File("images/back.png"));
-            }catch (IOException e)
-            {
-                log.logWarningMessage("Error card images not found.\n" + e.getMessage() + "\n" + e.getStackTrace());
-            }
         }
     }
 
@@ -98,7 +86,6 @@ public class Card implements Comparable<Card>
     public void show()
     {
         visible = true;
-        getImage();
     }
 
     /**
@@ -107,26 +94,6 @@ public class Card implements Comparable<Card>
     public void hide()
     {
         visible = false;
-        getImage();
-    }
-
-    /**
-     * @return the label for the card
-     */
-    public JLabel getCardLabel() {
-        cardLabel = new JLabel(new ImageIcon(getImage()));
-        return cardLabel; }
-
-    /**
-     * @return the face of the card if visible or the back of the card if not
-     */
-    public BufferedImage getImage()
-    {
-        if(visible)
-        {
-            return face;
-        }
-        return back;
     }
 
     /**

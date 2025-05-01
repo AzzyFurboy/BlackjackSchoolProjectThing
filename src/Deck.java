@@ -31,7 +31,7 @@ abstract class Deck
      */
     public Card deal()
     {
-        return deck.removeFirst();
+        return deck.remove(0);
     }
 
     /*

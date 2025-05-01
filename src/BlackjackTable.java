@@ -111,7 +111,7 @@ public class BlackjackTable
             }
         } while (!(reply.toLowerCase().startsWith("n")) || wasPush); // had to change it to just accept anything that starts with 'n' cuz my brother typed "sure" and killed it
         // End of the program/game
-        System.out.println("\n \nThanks for Playing !\n\tYou went into Mirage Casino with $" + player.startingMoney + " and left with $" + player.getStash() + "!");
+        System.out.println("\n \nThanks for Playing !\n\tYou went into Azzy's Casino with $" + player.startingMoney + " and left with $" + player.getStash() + "!");
         System.exit(0);
     }
 
@@ -259,7 +259,7 @@ public class BlackjackTable
 
             reply = scan.next();
             //if the player hits
-            if (reply.toLowerCase().equals("hit"))
+            if (reply.toLowerCase().startsWith("hit"))
             {
                 player.receiveCard(dealer.deal(), true);
                 System.out.println(printScores());
@@ -272,13 +272,13 @@ public class BlackjackTable
                 }
             }
             //if the player stays
-            else if (reply.toLowerCase().equals("stay"))
+            else if (reply.toLowerCase().startsWith("stay"))
             {
                 System.out.println("You Stay\n");
                 exit = true;
             }
             //if the player says double
-            else if (reply.toLowerCase().equals("double"))
+            else if (reply.toLowerCase().startsWith("double"))
             {
                 if(player.hand.size() == 2 && player.getStash() >= bet)
                 {
@@ -312,7 +312,7 @@ public class BlackjackTable
                 System.out.println("Sorry don't understand. Either you hit or stay or double. \n" +
                         " Hit means I give you another card. \n" +
                         " Stay means you don't want anymore cards. \n" +
-                        " Double means I give you only one more card and you double your bet. ");
+                        " Double means I give you only one more card and you double your bet.\n");
             }
         } while (!exit);
     }
