@@ -4,6 +4,8 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.Comparator;
 
 /**
@@ -19,8 +21,8 @@ public class Card implements Comparable<Card>
     int value;
     boolean visible;
     String name;
-    BufferedImage face;
-    BufferedImage back;
+    String facePath;
+    String backPath;
     JLabel cardLabel;
 
     /**
@@ -40,6 +42,9 @@ public class Card implements Comparable<Card>
             this.suit = suit;
             this.visible = visible;
             this.name = name;
+            cardLabel.setBackground(Color.white);
+            facePath = "png/"+name.toLowerCase()+"_of_"+suit.toString().toLowerCase()+".png";
+            backPath = "png/back";
         }
     }
 
@@ -72,6 +77,10 @@ public class Card implements Comparable<Card>
         return name;
     }
 
+    public JLabel getCardLabel() {
+        return cardLabel;
+    }
+
     /**
      * returns the status of visible
      */
@@ -86,6 +95,7 @@ public class Card implements Comparable<Card>
     public void show()
     {
         visible = true;
+        cardLabel.setIcon(new ImageIcon(facePath));
     }
 
     /**
@@ -94,6 +104,7 @@ public class Card implements Comparable<Card>
     public void hide()
     {
         visible = false;
+        cardLabel.setIcon(new ImageIcon(backPath));
     }
 
     /**

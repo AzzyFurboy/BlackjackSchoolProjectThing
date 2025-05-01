@@ -16,6 +16,23 @@ public abstract class Player
     JPanel cardPanel;
     JLabel nameLabel;
     JLabel stashLabel;
+
+    public JPanel getCardPanel() {
+        return cardPanel;
+    }
+
+    public JLabel getNameLabel() {
+        return nameLabel;
+    }
+
+    public JLabel getStashLabel() {
+        return stashLabel;
+    }
+
+    public JLabel getScoreLabel() {
+        return scoreLabel;
+    }
+
     JLabel scoreLabel;
 
     int startingMoney;
@@ -46,6 +63,10 @@ public abstract class Player
         }
         hand = new ArrayList<>();
         startingMoney = getStash();
+
+        nameLabel = new JLabel(name);
+        stashLabel = new JLabel(String.valueOf(stash));
+        cardPanel = new JPanel();
     }
 
     /**
@@ -67,6 +88,7 @@ public abstract class Player
             card.hide();
             hand.add(card);
         }
+        cardPanel.add(card.getCardLabel());
     }
 
     /**
