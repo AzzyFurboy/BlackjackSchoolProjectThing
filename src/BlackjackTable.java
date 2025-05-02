@@ -35,6 +35,7 @@ public class BlackjackTable
 
         player = new BlackjackPlayer("Player", 500);
         dealer = new BlackjackDealer(player.getStash()*5);
+        new Graphics("Blackjack", player, dealer);
     }
 
 

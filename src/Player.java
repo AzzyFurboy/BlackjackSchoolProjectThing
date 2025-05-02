@@ -16,23 +16,6 @@ public abstract class Player
     JPanel cardPanel;
     JLabel nameLabel;
     JLabel stashLabel;
-
-    public JPanel getCardPanel() {
-        return cardPanel;
-    }
-
-    public JLabel getNameLabel() {
-        return nameLabel;
-    }
-
-    public JLabel getStashLabel() {
-        return stashLabel;
-    }
-
-    public JLabel getScoreLabel() {
-        return scoreLabel;
-    }
-
     JLabel scoreLabel;
 
     int startingMoney;
@@ -67,6 +50,7 @@ public abstract class Player
         nameLabel = new JLabel(name);
         stashLabel = new JLabel(String.valueOf(stash));
         cardPanel = new JPanel();
+        scoreLabel = new JLabel(String.valueOf(scoreHand()));
     }
 
     /**
@@ -148,5 +132,37 @@ public abstract class Player
             player += c.toString() + "\n";
         }
         return player;
+    }
+
+    public JLabel getScoreLabel() {
+        return scoreLabel;
+    }
+
+    public void setScoreLabel(JLabel scoreLabel) {
+        this.scoreLabel = scoreLabel;
+    }
+
+    public JLabel getStashLabel() {
+        return stashLabel;
+    }
+
+    public void setStashLabel(JLabel stashLabel) {
+        this.stashLabel = stashLabel;
+    }
+
+    public JLabel getNameLabel() {
+        return nameLabel;
+    }
+
+    public void setNameLabel(JLabel nameLabel) {
+        this.nameLabel = nameLabel;
+    }
+
+    public JPanel getCardPanel() {
+        return cardPanel;
+    }
+
+    public void setCardPanel(JPanel cardPanel) {
+        this.cardPanel = cardPanel;
     }
 }

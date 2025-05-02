@@ -3,24 +3,30 @@ import java.awt.*;
 
 public class MainMenu {
 
-    Frame frame;
+    JFrame frame;
     JLabel title1;
     JLabel title2;
     JButton bjButt;
     JButton pokeButt;
     String game;
+    Color bgc = new Color(0,120,0);
+    Image icon = Toolkit.getDefaultToolkit().getImage("fav.jpg");
 
     public MainMenu()
     {
         makeFrame();
+        frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        frame.setExtendedState(JFrame.MAXIMIZED_BOTH);
         game = "";
         frame.setVisible(true);
     }
 
     private void makeFrame()
     {
-        frame = new Frame("Main Menu");
+        frame = new JFrame("Main Menu");
         frame.setLayout(new BorderLayout());
+        frame.setBackground(bgc);
+        frame.setIconImage(icon);
         north();
         center();
     }
@@ -36,26 +42,25 @@ public class MainMenu {
         north.add(title1);
         north.add(title2);
 
+        north.setBackground(bgc);
         frame.add(north,BorderLayout.NORTH);
     }
 
     private void center()
     {
         JPanel center = new JPanel();
-        center.setLayout(new BoxLayout(center, BoxLayout.X_AXIS));
+        center.setLayout(new GridBagLayout());
         bjButt = new JButton("Play Blackjack!");
         pokeButt = new JButton("Play 3 Card Poker!");
 
-        bjButt.addActionListener(e -> {new Graphics("Blackjack"); frame.dispose();});
-        pokeButt.addActionListener(e -> {new Graphics("Poker"); frame.dispose();});
+        bjButt.addActionListener(e -> {new BlackjackTable(); frame.dispose();});
+        pokeButt.addActionListener(e -> {new PokerTable(); frame.dispose();});
 
         center.add(bjButt);
+        center.add(Box.createRigidArea(new Dimension(20,1)));
         center.add(pokeButt);
 
+        center.setBackground(bgc);
         frame.add(center, BorderLayout.CENTER);
-    }
-
-    public String game(){
-        return game;
     }
 }

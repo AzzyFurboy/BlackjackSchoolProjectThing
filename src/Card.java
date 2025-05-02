@@ -42,7 +42,6 @@ public class Card implements Comparable<Card>
             this.suit = suit;
             this.visible = visible;
             this.name = name;
-            cardLabel.setBackground(Color.white);
             facePath = "png/"+name.toLowerCase()+"_of_"+suit.toString().toLowerCase()+".png";
             backPath = "png/back";
         }
