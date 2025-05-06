@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.*;
 import java.util.ArrayList;
 
 /**
@@ -51,6 +52,12 @@ public abstract class Player
         stashLabel = new JLabel(String.valueOf(stash));
         cardPanel = new JPanel();
         scoreLabel = new JLabel(String.valueOf(scoreHand()));
+        cardPanel.setBackground(Color.CYAN);
+    }
+
+    public void updateLabels(){
+        stashLabel.setText(String.valueOf(stash));
+        scoreLabel.setText(String.valueOf(scoreHand()));
     }
 
     /**
@@ -118,6 +125,7 @@ public abstract class Player
             card.show();
         }
     }
+
 
     /**
      * Return a string representing the player and the amount of money they have available

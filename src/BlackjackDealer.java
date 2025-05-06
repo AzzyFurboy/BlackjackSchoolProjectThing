@@ -8,6 +8,11 @@ public class BlackjackDealer extends BlackjackPlayer
 {
     // Create a private property of a Deck
     private Deck deck;
+    Logging log = new Logging();
+
+    public BlackjackDealer()
+    {
+    }
 
     /**
      * Constructor for objects of class Dealer
@@ -18,6 +23,7 @@ public class BlackjackDealer extends BlackjackPlayer
         // Initialize the Deck property by calling its constructor
         super("Dealer", stash);
         deck = new BlackjackDeck();
+        log.logInfoMessage(String.valueOf(deck.cardsLeftInDeck()));
     }
 
     /**
@@ -27,6 +33,7 @@ public class BlackjackDealer extends BlackjackPlayer
     public Card deal()
     {
         // Deal a card from the deck and return it.
+        log.logInfoMessage("Cards left in deck deal -> " + String.valueOf(deck.cardsLeftInDeck()));
         return deck.deal();
     }
     
@@ -37,5 +44,10 @@ public class BlackjackDealer extends BlackjackPlayer
     {
         // Initialize the deck as a new instance of the Deck to reset it to 52 random cards again.
         deck = new BlackjackDeck();
+        if(deck.cardsLeftInDeck() == 52){
+            log.logInfoMessage("Deck correctly reset");
+        }
+        else{log.logWarningMessage("Deck incorrectly reset");}
     }
+
 }

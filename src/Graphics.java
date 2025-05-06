@@ -2,7 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 
 public class Graphics {
-    JFrame frame;
+    static JFrame frame;
 
     JMenuBar menuBar;
     JMenu fileMenu;
@@ -25,13 +25,13 @@ public class Graphics {
     Player player;
     Player dealer;
 
-    JTextField betBox;
-    JButton betButton;
+    static JTextField betBox;
+    static JButton betButton;
+    static JButton hitButton;
+    static JButton stayButton;
 
-    public Graphics(String gameName, Player player, Player dealer) {
+    public Graphics(String gameName) {
         this.gameName = gameName;
-        this.player = player;
-        this.dealer = dealer;
 
         makeFrame();
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
@@ -45,6 +45,9 @@ public class Graphics {
         frame.setBackground(bgc);
         frame.setLayout(new BorderLayout());
         makeMenus();
+    }
+
+    public void fillFrame(){
         center();
         north();
         east();
@@ -61,6 +64,13 @@ public class Graphics {
         menuBar.add(help = new JMenu("Help"));
         help.add(about = new JMenuItem("About " + gameName));
 
+        about.addActionListener(e -> {if(gameName.equals("Blackjack")){
+            JOptionPane.showMessageDialog(null,"A simple GUI Blackjack game made by Gage Roush.\nFor more information PayPal me $1000.\n\nVersion: 1.0","About Blackjack",JOptionPane.INFORMATION_MESSAGE);
+        } else if (gameName.equals("Poker")) {
+            JOptionPane.showMessageDialog(null,"A unfinished GUI Poker game made by Gage Roush.\nFor more information PayPal me $1000000.\n\nVersion: 0.6","About Poker",JOptionPane.INFORMATION_MESSAGE);
+        }
+        });
+
         newGame.addActionListener(e -> {if(gameName.equals("Blackjack")){
             frame.dispose();
             new BlackjackTable();
@@ -70,6 +80,7 @@ public class Graphics {
         }
         });
         menu.addActionListener(e -> {frame.dispose(); new MainMenu();});
+        quit.addActionListener(e -> System.exit(0));
 
         frame.setJMenuBar(menuBar);
     }
@@ -137,6 +148,8 @@ public class Graphics {
 
         south.add(betBox = new JTextField(20));
         south.add(betButton = new JButton("Bet"));
+        south.add(hitButton = new JButton("Hit"));
+        south.add(stayButton = new JButton("Stay"));
 
         frame.add(south, BorderLayout.SOUTH);
     }
@@ -149,4 +162,11 @@ public class Graphics {
         statusLabel.setText(status);
     }
 
+    public void setDealer(Player dealer){
+        this.dealer = dealer;
+    }
+
+    public void setPlayer(Player player){
+        this.player = player;
+    }
 }

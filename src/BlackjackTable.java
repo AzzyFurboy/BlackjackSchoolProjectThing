@@ -1,5 +1,5 @@
-import java.awt.*;
-import java.util.Scanner;
+
+import javax.swing.*;;
 
 /**
  * Represents the table where you play blackjack at.
@@ -11,152 +11,85 @@ import java.util.Scanner;
  * @version 2025-04-16
  */
 
-public class BlackjackTable
+public class BlackjackTable extends Graphics
 {
-    private Scanner scan;
     private Logging log = new Logging();
 
-    BlackjackPlayer player;
-    BlackjackDealer dealer;
+    BlackjackPlayer player = new BlackjackPlayer();
+    BlackjackDealer dealer = new BlackjackDealer();
 
     private int pot; //the total amount of winnings available at the "table"
     private int bet; //represents the players bet
-    private boolean wasPush; //if a game was a push this will be true
+    private int dealerBet;//dealers bet
     private int winCount; // amount of wins the player has
     private int lossCount; // amount of games the player has lost
-    private boolean roundOver; // if the round has already been won/lost to a bust
 
     public BlackjackTable()
     {
-        scan = new Scanner(System.in);
+        super("Blackjack");
         pot = 0;
         winCount = 0;
         lossCount = 0;
 
         player = new BlackjackPlayer("Player", 500);
         dealer = new BlackjackDealer(player.getStash()*5);
-        new Graphics("Blackjack", player, dealer);
-    }
+        super.setDealer(dealer);
+        super.setPlayer(player);
+        super.fillFrame();
 
-
-    /**
-     * Plays the game
-     */
-    public void play()
-    {
-        String reply = "";
-
-        do
-        {
-            roundOver = false;
-            // taking bets
+        betButton.addActionListener(e -> {
             try
             {
-                takeBets();
-            } catch (IllegalBet e)
+                takeBets(Integer.parseInt(betBox.getText()));
+            } catch (IllegalBet ex)
             {
-                System.err.println(e.getMessage());
-                log.logWarningMessage(e.getMessage() + "\n Player Betted: " + bet + "\n Player Stash: " + player.stash);
+                System.err.println(ex.getMessage());
+                log.logWarningMessage(ex.getMessage() + "\n Player Betted: " + bet + "\n Player Stash: " + player.stash);
                 System.exit(0);
-            } catch (Exception e)
+            } catch (Exception ex)
             {
                 System.err.println("Error");
-                log.logWarningMessage(e.getMessage() + "\n Error when inputting bet");
+                log.logWarningMessage(ex.getMessage() + "\n Error when inputting bet");
                 System.exit(0);
-            }
-            wasPush = false;
+            }});
 
-            //giving out the starting cards of the blackjack hand
-            dealer.receiveCard(dealer.deal(), false);
-            player.receiveCard(dealer.deal(), true);
-            dealer.receiveCard(dealer.deal(), true);
-            player.receiveCard(dealer.deal(), true);
-            System.out.println(printScores());
-            // if the player gets a Blackjack on the first turn they get 1.5x the amount of money from what they bet
-            if (player.scoreHand() == 21)
-            {
-                System.out.println("You drew a blackjack ! You win !");
-                playerWins();
-                dealer.setStash(dealer.getStash() - bet/2);
-                player.setStash(player.getStash() + bet/2);
-                roundOver = true;
-            }
+        stayButton.addActionListener(e -> {playerLogic("Stay");});
+        hitButton.addActionListener(e -> {playerLogic("Hit");});
 
-            // rahaha game logic for the player
-            if(!roundOver)
-            {
-                playerLogic();
-            }
-
-            //dealer turn
-            if(!roundOver)
-            {
-                dealerLogic();
-            }
-
-            //scoring
-            if(!roundOver)
-            {
-                score();
-            }
-
-            //checks if anyone has 0, gets ignored if there was a push
-            if(ultimateWinnerCheck() && !wasPush){ break; }
-
-            endRound();
-
-            //if the game was a push the player doesn't get the chance to leave and another round is immediately started
-            if(!wasPush)
-            {
-                System.out.println("Would you like to keep playing? Y/N \nWins: " + winCount + "\nLosses: " + lossCount);
-                reply = scan.next();
-            }
-        } while (!(reply.toLowerCase().startsWith("n")) || wasPush); // had to change it to just accept anything that starts with 'n' cuz my brother typed "sure" and killed it
-        // End of the program/game
-        System.out.println("\n \nThanks for Playing !\n\tYou went into Azzy's Casino with $" + player.startingMoney + " and left with $" + player.getStash() + "!");
-        System.exit(0);
+        newRound();
     }
+
 
     /**
      * Takes a players bet. The dealer then matches it, if the dealer cannot match then they go "all in" and use all their chips to try to match.
      */
-    private void takeBets() throws IllegalBet
+    private void takeBets(int bet) throws IllegalBet
     {
-        bet = 0;
-
-        System.out.println("Please make your bet. \n You have $" + player.getStash());
-
-            bet = scan.nextInt();
-            if (bet < 0 && !wasPush)
+        this.bet = bet;
+            if (bet < 0)
             {
                 throw new IllegalBet("Illegal Bet, less than 0");
             } else if (bet > player.getStash())
             {
                 throw new IllegalBet("Illegal Bet, more than player stash");
             }
-            player.setStash(player.getStash() - bet);
+             player.setStash(player.getStash() - bet);
+            pot = bet;
             // if dealer has less than the bet, they go all in. Adding all their stash to the pot and setting their stash to 0
-        if(dealer.getStash() >= bet)
-        {
-            pot += bet * 2;
-            dealer.setStash(dealer.getStash() - bet);
-        }
-        else {
-            pot += bet + dealer.getStash();
-            dealer.setStash(0);
-        }
-        System.out.println("The current pot is -> " + pot);
-    }
+        dealerBetting();
+        betButton.setEnabled(false);
 
-    /**
-     * Thing that prints both the player and dealers scores so i dont have to rewrite it all the time.
-     * @return the toStrings of the dealer and player seperated by a line
-     */
-    private String printScores()
-    {
-        String string;
-        string = (dealer.toString() + "\n" + player.toString() + "\n" + "--------------------------- \n");
-        return string;
+        hitButton.setEnabled(true);
+        stayButton.setEnabled(true);
+
+        dealer.updateLabels();
+        player.updateLabels();
+        potLabel.setText("Pot: " + pot);
+
+        dealer.resetDeck();
+        startingCards();
+
+        frame.repaint();
     }
 
     /**
@@ -166,6 +99,20 @@ public class BlackjackTable
     {
         player.setStash(player.getStash() + pot);
         winCount++;
+        if(ultimateWinnerCheck()){
+            JOptionPane.showMessageDialog(null, "YOU BEAT THE HOUSE!!", "You went home with all the money.\nNow go somewhere else.", JOptionPane.OK_OPTION);
+                new MainMenu();
+                frame.dispose();
+        }
+        else {
+            int dialog = JOptionPane.showConfirmDialog(null, "Play again?\n" + "Wins: " + winCount + "\nLosses: " + lossCount, "Player Wins!!", JOptionPane.YES_NO_OPTION);
+            if (dialog == 1) {
+                frame.dispose();
+                new MainMenu();
+            } else {
+                newRound();
+            }
+        }
     }
 
     /**
@@ -175,6 +122,21 @@ public class BlackjackTable
     {
         dealer.setStash(dealer.getStash() + pot);
         lossCount++;
+        if(ultimateWinnerCheck()){
+            JOptionPane.showMessageDialog(null, "YOU LOST IT ALL!!", "You are now broke.\nCome back again soon broke boi :3", JOptionPane.OK_OPTION);
+                new MainMenu();
+                frame.dispose();
+        }
+        else{
+        int dialog = JOptionPane.showConfirmDialog(null, "Play again?\n" + "Wins: " + winCount + "\nLosses: " + lossCount, "Dealer Wins!!",JOptionPane.YES_NO_OPTION);
+        if(dialog == 1){
+            frame.dispose();
+            new MainMenu();
+        }
+        else{
+            newRound();
+        }
+        }
     }
 
     /**
@@ -185,12 +147,10 @@ public class BlackjackTable
     {
         if(dealer.getStash() == 0)
         {
-            System.out.println(player.name + " cleans house and is the Ulitimate Winner!!");
             return true;
         }
         else if (player.getStash() == 0)
         {
-            System.out.println("The house wins! \n you may leave broke now.");
             return true;
         }
         return false;
@@ -201,19 +161,22 @@ public class BlackjackTable
      */
     private void score()
     {
-        if(player.scoreHand() > dealer.scoreHand())
+        if(player.scoreHand() > dealer.scoreHand() && player.scoreHand() <= 21)
         {
-            System.out.println("You WIN !");
             playerWins();
         }
-        else if (player.scoreHand() == dealer.scoreHand())
+        else if (player.scoreHand() == dealer.scoreHand() && player.scoreHand() <= 21)
         {
-            wasPush = true;
-            System.out.println("The game is a push! The pot keeps its value and you need to play again!");
+            JOptionPane.showMessageDialog(null,"Push!","The game was a push, both players have their money returned.",JOptionPane.INFORMATION_MESSAGE);
+            player.setStash(player.getStash()+bet);
+            dealer.setStash(dealer.getStash()+dealerBet);
+            newRound();
         }
-        else
+        else if(player.scoreHand() <= 21 && dealer.scoreHand() > 21)
         {
-            System.out.println("You LOSE !");
+            playerWins();
+        }else if(dealer.scoreHand() > player.scoreHand())
+        {
             dealerWins();
         }
     }
@@ -224,113 +187,78 @@ public class BlackjackTable
     private void dealerLogic()
     {
         dealer.showAllCards();
-        System.out.println("Dealer flips his cards..");
-        System.out.println(printScores());
+        dealer.updateLabels();
+        frame.repaint();
         if (dealer.scoreHand() < 17)
         {
             do
             {
                 dealer.receiveCard(dealer.deal(), true);
-                System.out.println("The dealer draws..");
-                System.out.println(printScores());
-
-                if (dealer.scoreHand() > 21)
-                {
-                    System.out.println("The dealer busts ! \n You win !");
-                    playerWins();
-                    roundOver = true;
-                }
+                dealer.updateLabels();
+                frame.repaint();
             } while (dealer.scoreHand() < 17);
         }
+        score();
     }
 
     /**
      * What the player can do on their turn.
      *
      * Features . .
-     * Hitting, Staying, and Doubling Down ! ! !
+     * Hitting and Staying
      */
-    private void playerLogic()
+    private void playerLogic(String reply)
     {
-        String reply = "";
-        boolean exit = false;
-        do
-        {
-            if(player.hand.size() == 2){ System.out.println("Hit, Stay, or Double?"); }
-            else{ System.out.println("Hit or Stay?"); }
-
-            reply = scan.next();
             //if the player hits
-            if (reply.toLowerCase().startsWith("hit"))
+            if (reply.equals("Hit"))
             {
                 player.receiveCard(dealer.deal(), true);
-                System.out.println(printScores());
-                if (player.scoreHand() > 21)
-                {
-                    System.out.println("BUST ! \n You LOSE!");
+                if(player.scoreHand() > 21){
                     dealerWins();
-                    roundOver = true;
-                    break;
+                    hitButton.setEnabled(false);
+                    stayButton.setEnabled(false);
+                    return;
                 }
             }
             //if the player stays
-            else if (reply.toLowerCase().startsWith("stay"))
+            else if (reply.equals("Stay"))
             {
-                System.out.println("You Stay\n");
-                exit = true;
-            }
-            //if the player says double
-            else if (reply.toLowerCase().startsWith("double"))
-            {
-                if(player.hand.size() == 2 && player.getStash() >= bet)
-                {
-                    System.out.println("You Double Down");
-                    player.setStash(player.getStash() - bet);
-                    dealerBetting();
+                dealerLogic();
 
-                    player.receiveCard(dealer.deal(), true);
-                    System.out.println(printScores());
-                    exit = true;
-                    if (player.scoreHand() > 21)
-                    {
-                        System.out.println("BUST ! \n You LOSE!");
-                        dealerWins();
-                        roundOver = true;
-                        break;
-                    }
-                }
-                else if (player.hand.size() > 2)
-                {
-                    System.out.println("You can only double down on your first move");
-                }
-                else if (player.getStash() < bet*2)
-                {
-                    System.out.println("You don't have enough money.");
-                }
+                hitButton.setEnabled(false);
+                stayButton.setEnabled(false);
             }
-            //if the player says anything invalid
-            else
-            {
-                System.out.println("Sorry don't understand. Either you hit or stay or double. \n" +
-                        " Hit means I give you another card. \n" +
-                        " Stay means you don't want anymore cards. \n" +
-                        " Double means I give you only one more card and you double your bet.\n");
-            }
-        } while (!exit);
+
+        dealer.updateLabels();
+        player.updateLabels();
+
+        frame.repaint();
     }
 
     /**
-     * Resets both players hand and the deck, resetting the pot to 0
+     * Resets both players hand and the deck, resetting the pot to 0.
+     * Also checks if any player has completely won
      */
-    private void endRound()
+    private void newRound()
     {
+        hitButton.setEnabled(false);
+        stayButton.setEnabled(false);
+        betButton.setEnabled(true);
+
         dealer.resetDeck();
+
         player.clearHand();
         dealer.clearHand();
-        if (!wasPush)
-        {
-            pot = 0;
-        }
+        player.cardPanel.removeAll();
+        dealer.cardPanel.removeAll();
+
+
+        player.updateLabels();
+        dealer.updateLabels();
+        frame.repaint();
+        pot = 0;
+        bet = 0;
+        dealerBet = 0;
     }
 
     /**
@@ -341,12 +269,25 @@ public class BlackjackTable
     {
         if(dealer.getStash() >= bet)
         {
-            pot += bet + bet;
+            dealerBet = bet;
+            pot += dealerBet;
             dealer.setStash(dealer.getStash() - bet);
         }
         else {
-            pot += bet + dealer.getStash();
+            dealerBet =  dealer.getStash();
+            pot += dealerBet;
             dealer.setStash(0);
         }
     }
+
+    /**
+     * Starting cards
+     */
+    private void startingCards(){
+        dealer.receiveCard(dealer.deal(), false);
+        player.receiveCard(dealer.deal(), true);
+        dealer.receiveCard(dealer.deal(), true);
+        player.receiveCard(dealer.deal(), true);
+    }
+
 }

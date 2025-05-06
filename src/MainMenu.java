@@ -29,6 +29,7 @@ public class MainMenu {
         frame.setIconImage(icon);
         north();
         center();
+        pokeButt.setEnabled(false);
     }
 
     private void north()
@@ -42,7 +43,7 @@ public class MainMenu {
         north.add(title1);
         north.add(title2);
 
-        north.setBackground(bgc);
+        north.setBackground(Color.red);
         frame.add(north,BorderLayout.NORTH);
     }
 

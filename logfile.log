@@ -1,0 +1,808 @@
+May 04, 2025 1:11:06 AM Logging logWarningMessage
+WARNING: Illegal Bet, more than player stash
+ Player Betted: 2000
+ Player Stash: 460
+May 04, 2025 1:29:47 AM Logging logWarningMessage
+WARNING: Illegal Bet, more than player stash
+ Player Betted: 20
+ Player Stash: 0
+May 05, 2025 12:26:49 PM Logging logWarningMessage
+WARNING: Illegal Bet, more than player stash
+ Player Betted: 5000
+ Player Stash: 500
+May 05, 2025 4:27:20 PM Logging logInfoMessage
+INFO: 52
+May 05, 2025 4:31:11 PM Logging logInfoMessage
+INFO: 52
+May 05, 2025 4:31:14 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 52
+May 05, 2025 4:31:14 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 51
+May 05, 2025 4:31:14 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 50
+May 05, 2025 4:31:14 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 49
+May 05, 2025 4:31:20 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 52
+May 05, 2025 4:31:20 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 51
+May 05, 2025 4:31:20 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 50
+May 05, 2025 4:31:20 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 49
+May 05, 2025 4:31:21 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 48
+May 05, 2025 4:31:21 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 47
+May 05, 2025 4:31:30 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 52
+May 05, 2025 4:31:30 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 51
+May 05, 2025 4:31:30 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 50
+May 05, 2025 4:31:30 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 49
+May 05, 2025 4:31:33 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 48
+May 05, 2025 4:31:33 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 47
+May 05, 2025 4:31:33 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 46
+May 05, 2025 4:31:33 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 45
+May 05, 2025 4:31:33 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 44
+May 05, 2025 4:31:33 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 43
+May 05, 2025 4:31:33 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 42
+May 05, 2025 4:31:33 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 41
+May 05, 2025 4:31:33 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 40
+May 05, 2025 4:31:33 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 39
+May 05, 2025 4:31:33 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 38
+May 05, 2025 4:31:33 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 37
+May 05, 2025 4:31:33 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 36
+May 05, 2025 4:31:33 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 35
+May 05, 2025 4:31:33 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 34
+May 05, 2025 4:31:33 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 33
+May 05, 2025 4:31:33 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 32
+May 05, 2025 4:31:33 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 31
+May 05, 2025 4:31:33 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 30
+May 05, 2025 4:31:33 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 29
+May 05, 2025 4:31:33 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 28
+May 05, 2025 4:31:33 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 27
+May 05, 2025 4:31:33 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 26
+May 05, 2025 4:31:33 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 25
+May 05, 2025 4:31:33 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 24
+May 05, 2025 4:31:33 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 23
+May 05, 2025 4:31:33 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 22
+May 05, 2025 4:31:33 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 21
+May 05, 2025 4:31:33 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 20
+May 05, 2025 4:31:33 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 19
+May 05, 2025 4:31:33 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 18
+May 05, 2025 4:31:33 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 17
+May 05, 2025 4:31:33 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 16
+May 05, 2025 4:31:33 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 15
+May 05, 2025 4:31:33 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 14
+May 05, 2025 4:31:33 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 13
+May 05, 2025 4:31:33 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 12
+May 05, 2025 4:31:33 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 11
+May 05, 2025 4:31:33 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 10
+May 05, 2025 4:31:33 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 9
+May 05, 2025 4:31:33 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 8
+May 05, 2025 4:31:33 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 7
+May 05, 2025 4:31:33 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 6
+May 05, 2025 4:31:33 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 5
+May 05, 2025 4:31:33 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 4
+May 05, 2025 4:31:33 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 3
+May 05, 2025 4:31:33 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 2
+May 05, 2025 4:31:33 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 1
+May 05, 2025 4:31:33 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 0
+May 05, 2025 4:35:19 PM Logging logInfoMessage
+INFO: 52
+May 05, 2025 4:35:19 PM Logging logInfoMessage
+INFO: Deck correctly reset
+May 05, 2025 4:35:23 PM Logging logInfoMessage
+INFO: Deck correctly reset
+May 05, 2025 4:35:23 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 52
+May 05, 2025 4:35:23 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 51
+May 05, 2025 4:35:23 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 50
+May 05, 2025 4:35:23 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 49
+May 05, 2025 4:35:25 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 48
+May 05, 2025 4:35:27 PM Logging logInfoMessage
+INFO: Deck correctly reset
+May 05, 2025 4:35:29 PM Logging logInfoMessage
+INFO: Deck correctly reset
+May 05, 2025 4:35:29 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 52
+May 05, 2025 4:35:29 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 51
+May 05, 2025 4:35:29 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 50
+May 05, 2025 4:35:29 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 49
+May 05, 2025 4:35:30 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 48
+May 05, 2025 4:35:30 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 47
+May 05, 2025 4:35:32 PM Logging logInfoMessage
+INFO: Deck correctly reset
+May 05, 2025 4:35:33 PM Logging logInfoMessage
+INFO: Deck correctly reset
+May 05, 2025 4:35:33 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 52
+May 05, 2025 4:35:33 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 51
+May 05, 2025 4:35:33 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 50
+May 05, 2025 4:35:33 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 49
+May 05, 2025 4:35:34 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 48
+May 05, 2025 4:35:34 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 47
+May 05, 2025 4:35:34 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 46
+May 05, 2025 4:35:34 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 45
+May 05, 2025 4:35:34 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 44
+May 05, 2025 4:35:34 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 43
+May 05, 2025 4:35:34 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 42
+May 05, 2025 4:35:34 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 41
+May 05, 2025 4:35:34 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 40
+May 05, 2025 4:35:34 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 39
+May 05, 2025 4:35:34 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 38
+May 05, 2025 4:35:34 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 37
+May 05, 2025 4:35:34 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 36
+May 05, 2025 4:35:34 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 35
+May 05, 2025 4:35:34 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 34
+May 05, 2025 4:35:34 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 33
+May 05, 2025 4:35:34 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 32
+May 05, 2025 4:35:34 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 31
+May 05, 2025 4:35:34 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 30
+May 05, 2025 4:35:34 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 29
+May 05, 2025 4:35:34 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 28
+May 05, 2025 4:35:34 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 27
+May 05, 2025 4:35:34 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 26
+May 05, 2025 4:35:34 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 25
+May 05, 2025 4:35:34 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 24
+May 05, 2025 4:35:34 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 23
+May 05, 2025 4:35:34 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 22
+May 05, 2025 4:35:34 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 21
+May 05, 2025 4:35:34 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 20
+May 05, 2025 4:35:34 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 19
+May 05, 2025 4:35:34 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 18
+May 05, 2025 4:35:34 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 17
+May 05, 2025 4:35:34 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 16
+May 05, 2025 4:35:34 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 15
+May 05, 2025 4:35:34 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 14
+May 05, 2025 4:35:34 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 13
+May 05, 2025 4:35:34 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 12
+May 05, 2025 4:35:34 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 11
+May 05, 2025 4:35:34 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 10
+May 05, 2025 4:35:34 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 9
+May 05, 2025 4:35:34 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 8
+May 05, 2025 4:35:34 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 7
+May 05, 2025 4:35:34 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 6
+May 05, 2025 4:35:34 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 5
+May 05, 2025 4:35:34 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 4
+May 05, 2025 4:35:34 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 3
+May 05, 2025 4:35:34 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 2
+May 05, 2025 4:35:34 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 1
+May 05, 2025 4:35:34 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 0
+May 05, 2025 4:42:36 PM Logging logInfoMessage
+INFO: 52
+May 05, 2025 4:42:36 PM Logging logInfoMessage
+INFO: Deck correctly reset
+May 05, 2025 4:42:39 PM Logging logInfoMessage
+INFO: Deck correctly reset
+May 05, 2025 4:42:39 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 52
+May 05, 2025 4:42:39 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 51
+May 05, 2025 4:42:39 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 50
+May 05, 2025 4:42:39 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 49
+May 05, 2025 4:42:40 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 48
+May 05, 2025 4:42:40 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 47
+May 05, 2025 4:42:43 PM Logging logInfoMessage
+INFO: Deck correctly reset
+May 05, 2025 4:42:44 PM Logging logInfoMessage
+INFO: Deck correctly reset
+May 05, 2025 4:42:44 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 52
+May 05, 2025 4:42:44 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 51
+May 05, 2025 4:42:44 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 50
+May 05, 2025 4:42:44 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 49
+May 05, 2025 4:42:45 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 48
+May 05, 2025 4:42:45 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 47
+May 05, 2025 4:42:45 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 46
+May 05, 2025 4:42:48 PM Logging logInfoMessage
+INFO: Deck correctly reset
+May 05, 2025 4:42:49 PM Logging logInfoMessage
+INFO: Deck correctly reset
+May 05, 2025 4:42:49 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 52
+May 05, 2025 4:42:49 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 51
+May 05, 2025 4:42:49 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 50
+May 05, 2025 4:42:49 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 49
+May 05, 2025 4:42:53 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 48
+May 05, 2025 4:42:54 PM Logging logInfoMessage
+INFO: Deck correctly reset
+May 05, 2025 4:42:55 PM Logging logInfoMessage
+INFO: Deck correctly reset
+May 05, 2025 4:42:55 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 52
+May 05, 2025 4:42:55 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 51
+May 05, 2025 4:42:55 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 50
+May 05, 2025 4:42:55 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 49
+May 05, 2025 4:42:57 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 48
+May 05, 2025 4:42:59 PM Logging logInfoMessage
+INFO: Deck correctly reset
+May 05, 2025 4:43:00 PM Logging logInfoMessage
+INFO: Deck correctly reset
+May 05, 2025 4:43:00 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 52
+May 05, 2025 4:43:00 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 51
+May 05, 2025 4:43:00 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 50
+May 05, 2025 4:43:00 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 49
+May 05, 2025 4:43:02 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 48
+May 05, 2025 4:43:03 PM Logging logInfoMessage
+INFO: Deck correctly reset
+May 05, 2025 4:43:04 PM Logging logInfoMessage
+INFO: Deck correctly reset
+May 05, 2025 4:43:04 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 52
+May 05, 2025 4:43:04 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 51
+May 05, 2025 4:43:04 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 50
+May 05, 2025 4:43:04 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 49
+May 05, 2025 4:43:05 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 48
+May 05, 2025 4:43:05 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 47
+May 05, 2025 4:43:34 PM Logging logInfoMessage
+INFO: 52
+May 05, 2025 4:43:35 PM Logging logInfoMessage
+INFO: Deck correctly reset
+May 05, 2025 4:43:38 PM Logging logInfoMessage
+INFO: Deck correctly reset
+May 05, 2025 4:43:38 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 52
+May 05, 2025 4:43:38 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 51
+May 05, 2025 4:43:38 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 50
+May 05, 2025 4:43:38 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 49
+May 05, 2025 4:43:39 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 48
+May 05, 2025 4:43:39 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 47
+May 05, 2025 4:43:40 PM Logging logInfoMessage
+INFO: Deck correctly reset
+May 05, 2025 4:43:42 PM Logging logInfoMessage
+INFO: Deck correctly reset
+May 05, 2025 4:43:42 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 52
+May 05, 2025 4:43:42 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 51
+May 05, 2025 4:43:42 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 50
+May 05, 2025 4:43:42 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 49
+May 05, 2025 4:43:44 PM Logging logInfoMessage
+INFO: Deck correctly reset
+May 05, 2025 4:43:45 PM Logging logInfoMessage
+INFO: Deck correctly reset
+May 05, 2025 4:43:45 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 52
+May 05, 2025 4:43:45 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 51
+May 05, 2025 4:43:45 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 50
+May 05, 2025 4:43:45 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 49
+May 05, 2025 4:43:46 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 48
+May 05, 2025 4:43:46 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 47
+May 05, 2025 4:44:54 PM Logging logInfoMessage
+INFO: 52
+May 05, 2025 4:44:54 PM Logging logInfoMessage
+INFO: Deck correctly reset
+May 05, 2025 4:44:58 PM Logging logInfoMessage
+INFO: Deck correctly reset
+May 05, 2025 4:44:58 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 52
+May 05, 2025 4:44:58 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 51
+May 05, 2025 4:44:58 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 50
+May 05, 2025 4:44:58 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 49
+May 05, 2025 4:45:02 PM Logging logInfoMessage
+INFO: Deck correctly reset
+May 05, 2025 4:45:03 PM Logging logInfoMessage
+INFO: Deck correctly reset
+May 05, 2025 4:45:03 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 52
+May 05, 2025 4:45:03 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 51
+May 05, 2025 4:45:03 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 50
+May 05, 2025 4:45:03 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 49
+May 05, 2025 4:45:04 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 48
+May 05, 2025 4:45:10 PM Logging logInfoMessage
+INFO: Deck correctly reset
+May 05, 2025 4:45:12 PM Logging logInfoMessage
+INFO: Deck correctly reset
+May 05, 2025 4:45:12 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 52
+May 05, 2025 4:45:12 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 51
+May 05, 2025 4:45:12 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 50
+May 05, 2025 4:45:12 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 49
+May 05, 2025 4:45:13 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 48
+May 05, 2025 4:45:13 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 47
+May 05, 2025 4:45:15 PM Logging logInfoMessage
+INFO: Deck correctly reset
+May 05, 2025 4:45:16 PM Logging logInfoMessage
+INFO: Deck correctly reset
+May 05, 2025 4:45:16 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 52
+May 05, 2025 4:45:16 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 51
+May 05, 2025 4:45:16 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 50
+May 05, 2025 4:45:16 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 49
+May 05, 2025 4:45:17 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 48
+May 05, 2025 4:45:20 PM Logging logInfoMessage
+INFO: Deck correctly reset
+May 05, 2025 4:45:22 PM Logging logInfoMessage
+INFO: Deck correctly reset
+May 05, 2025 4:45:22 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 52
+May 05, 2025 4:45:22 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 51
+May 05, 2025 4:45:22 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 50
+May 05, 2025 4:45:22 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 49
+May 05, 2025 4:45:24 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 48
+May 05, 2025 5:29:24 PM Logging logInfoMessage
+INFO: 52
+May 05, 2025 5:29:24 PM Logging logInfoMessage
+INFO: Deck correctly reset
+May 05, 2025 5:29:28 PM Logging logInfoMessage
+INFO: Deck correctly reset
+May 05, 2025 5:29:28 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 52
+May 05, 2025 5:29:28 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 51
+May 05, 2025 5:29:28 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 50
+May 05, 2025 5:29:28 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 49
+May 05, 2025 5:29:30 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 48
+May 05, 2025 5:29:35 PM Logging logInfoMessage
+INFO: Deck correctly reset
+May 05, 2025 5:29:37 PM Logging logInfoMessage
+INFO: Deck correctly reset
+May 05, 2025 5:29:37 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 52
+May 05, 2025 5:29:37 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 51
+May 05, 2025 5:29:37 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 50
+May 05, 2025 5:29:37 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 49
+May 05, 2025 5:29:38 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 48
+May 05, 2025 5:29:39 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 47
+May 05, 2025 5:29:45 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 46
+May 05, 2025 5:29:47 PM Logging logInfoMessage
+INFO: Deck correctly reset
+May 05, 2025 5:29:49 PM Logging logInfoMessage
+INFO: Deck correctly reset
+May 05, 2025 5:29:49 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 52
+May 05, 2025 5:29:49 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 51
+May 05, 2025 5:29:49 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 50
+May 05, 2025 5:29:49 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 49
+May 05, 2025 5:29:55 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 48
+May 05, 2025 5:31:35 PM Logging logInfoMessage
+INFO: 52
+May 05, 2025 5:31:36 PM Logging logInfoMessage
+INFO: Deck correctly reset
+May 05, 2025 5:31:40 PM Logging logInfoMessage
+INFO: Deck correctly reset
+May 05, 2025 5:31:40 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 52
+May 05, 2025 5:31:40 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 51
+May 05, 2025 5:31:40 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 50
+May 05, 2025 5:31:40 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 49
+May 05, 2025 5:31:42 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 48
+May 05, 2025 5:31:42 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 47
+May 05, 2025 5:31:46 PM Logging logInfoMessage
+INFO: Deck correctly reset
+May 05, 2025 5:31:48 PM Logging logInfoMessage
+INFO: Deck correctly reset
+May 05, 2025 5:31:48 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 52
+May 05, 2025 5:31:48 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 51
+May 05, 2025 5:31:48 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 50
+May 05, 2025 5:31:48 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 49
+May 05, 2025 5:31:49 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 48
+May 05, 2025 5:31:51 PM Logging logInfoMessage
+INFO: Deck correctly reset
+May 05, 2025 5:31:52 PM Logging logInfoMessage
+INFO: Deck correctly reset
+May 05, 2025 5:31:52 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 52
+May 05, 2025 5:31:52 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 51
+May 05, 2025 5:31:52 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 50
+May 05, 2025 5:31:52 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 49
+May 05, 2025 5:31:54 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 48
+May 05, 2025 5:31:55 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 47
+May 05, 2025 5:31:56 PM Logging logInfoMessage
+INFO: Deck correctly reset
+May 05, 2025 5:31:58 PM Logging logInfoMessage
+INFO: Deck correctly reset
+May 05, 2025 5:31:58 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 52
+May 05, 2025 5:31:58 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 51
+May 05, 2025 5:31:58 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 50
+May 05, 2025 5:31:58 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 49
+May 05, 2025 5:31:59 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 48
+May 05, 2025 5:32:01 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 47
+May 05, 2025 5:32:02 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 46
+May 05, 2025 5:32:04 PM Logging logInfoMessage
+INFO: Deck correctly reset
+May 05, 2025 5:32:05 PM Logging logInfoMessage
+INFO: Deck correctly reset
+May 05, 2025 5:32:05 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 52
+May 05, 2025 5:32:05 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 51
+May 05, 2025 5:32:05 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 50
+May 05, 2025 5:32:05 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 49
+May 05, 2025 5:32:09 PM Logging logInfoMessage
+INFO: Deck correctly reset
+May 05, 2025 5:32:10 PM Logging logInfoMessage
+INFO: Deck correctly reset
+May 05, 2025 5:32:10 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 52
+May 05, 2025 5:32:10 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 51
+May 05, 2025 5:32:10 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 50
+May 05, 2025 5:32:10 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 49
+May 05, 2025 5:32:13 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 48
+May 05, 2025 5:32:14 PM Logging logInfoMessage
+INFO: Deck correctly reset
+May 05, 2025 5:32:15 PM Logging logInfoMessage
+INFO: Deck correctly reset
+May 05, 2025 5:32:15 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 52
+May 05, 2025 5:32:15 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 51
+May 05, 2025 5:32:15 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 50
+May 05, 2025 5:32:15 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 49
+May 05, 2025 5:32:17 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 48
+May 05, 2025 5:32:18 PM Logging logInfoMessage
+INFO: Deck correctly reset
+May 05, 2025 5:32:19 PM Logging logInfoMessage
+INFO: Deck correctly reset
+May 05, 2025 5:32:19 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 52
+May 05, 2025 5:32:19 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 51
+May 05, 2025 5:32:19 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 50
+May 05, 2025 5:32:19 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 49
+May 05, 2025 5:32:21 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 48
+May 05, 2025 5:32:21 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 47
+May 05, 2025 5:32:22 PM Logging logInfoMessage
+INFO: Deck correctly reset
+May 05, 2025 7:02:06 PM Logging logInfoMessage
+INFO: 52
+May 05, 2025 7:02:06 PM Logging logInfoMessage
+INFO: Deck correctly reset
+May 05, 2025 7:02:10 PM Logging logInfoMessage
+INFO: Deck correctly reset
+May 05, 2025 7:02:10 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 52
+May 05, 2025 7:02:10 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 51
+May 05, 2025 7:02:10 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 50
+May 05, 2025 7:02:10 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 49
+May 05, 2025 7:02:11 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 48
+May 05, 2025 7:02:13 PM Logging logInfoMessage
+INFO: Cards left in deck deal -> 47
+May 06, 2025 2:20:09 AM Logging logInfoMessage
+INFO: 52
+May 06, 2025 2:20:09 AM Logging logInfoMessage
+INFO: Deck correctly reset
+May 06, 2025 2:20:12 AM Logging logInfoMessage
+INFO: Deck correctly reset
+May 06, 2025 2:20:12 AM Logging logInfoMessage
+INFO: Cards left in deck deal -> 52
+May 06, 2025 2:20:12 AM Logging logInfoMessage
+INFO: Cards left in deck deal -> 51
+May 06, 2025 2:20:12 AM Logging logInfoMessage
+INFO: Cards left in deck deal -> 50
+May 06, 2025 2:20:12 AM Logging logInfoMessage
+INFO: Cards left in deck deal -> 49
+May 06, 2025 2:20:14 AM Logging logInfoMessage
+INFO: Cards left in deck deal -> 48
+May 06, 2025 2:20:14 AM Logging logInfoMessage
+INFO: Cards left in deck deal -> 47
+May 06, 2025 2:29:54 AM Logging logInfoMessage
+INFO: 52
+May 06, 2025 2:29:54 AM Logging logInfoMessage
+INFO: Deck correctly reset
+May 06, 2025 2:30:15 AM Logging logInfoMessage
+INFO: Deck correctly reset
+May 06, 2025 2:30:15 AM Logging logInfoMessage
+INFO: Cards left in deck deal -> 52
+May 06, 2025 2:30:15 AM Logging logInfoMessage
+INFO: Cards left in deck deal -> 51
+May 06, 2025 2:30:15 AM Logging logInfoMessage
+INFO: Cards left in deck deal -> 50
+May 06, 2025 2:30:15 AM Logging logInfoMessage
+INFO: Cards left in deck deal -> 49
+May 06, 2025 2:30:17 AM Logging logInfoMessage
+INFO: Cards left in deck deal -> 48
+May 06, 2025 2:30:20 AM Logging logInfoMessage
+INFO: Deck correctly reset
+May 06, 2025 2:30:22 AM Logging logInfoMessage
+INFO: Deck correctly reset
+May 06, 2025 2:30:22 AM Logging logInfoMessage
+INFO: Cards left in deck deal -> 52
+May 06, 2025 2:30:22 AM Logging logInfoMessage
+INFO: Cards left in deck deal -> 51
+May 06, 2025 2:30:22 AM Logging logInfoMessage
+INFO: Cards left in deck deal -> 50
+May 06, 2025 2:30:22 AM Logging logInfoMessage
+INFO: Cards left in deck deal -> 49
+May 06, 2025 2:30:25 AM Logging logInfoMessage
+INFO: Cards left in deck deal -> 48
+May 06, 2025 2:30:26 AM Logging logInfoMessage
+INFO: Cards left in deck deal -> 47
+May 06, 2025 2:30:29 AM Logging logInfoMessage
+INFO: Deck correctly reset
+May 06, 2025 2:30:30 AM Logging logInfoMessage
+INFO: Deck correctly reset
+May 06, 2025 2:30:30 AM Logging logInfoMessage
+INFO: Cards left in deck deal -> 52
+May 06, 2025 2:30:30 AM Logging logInfoMessage
+INFO: Cards left in deck deal -> 51
+May 06, 2025 2:30:30 AM Logging logInfoMessage
+INFO: Cards left in deck deal -> 50
+May 06, 2025 2:30:30 AM Logging logInfoMessage
+INFO: Cards left in deck deal -> 49
+May 06, 2025 2:30:34 AM Logging logInfoMessage
+INFO: Cards left in deck deal -> 48
+May 06, 2025 2:31:53 AM Logging logInfoMessage
+INFO: 52
+May 06, 2025 2:31:53 AM Logging logInfoMessage
+INFO: Deck correctly reset
+May 06, 2025 2:31:58 AM Logging logInfoMessage
+INFO: Deck correctly reset
+May 06, 2025 2:31:58 AM Logging logInfoMessage
+INFO: Cards left in deck deal -> 52
+May 06, 2025 2:31:58 AM Logging logInfoMessage
+INFO: Cards left in deck deal -> 51
+May 06, 2025 2:31:58 AM Logging logInfoMessage
+INFO: Cards left in deck deal -> 50
+May 06, 2025 2:31:58 AM Logging logInfoMessage
+INFO: Cards left in deck deal -> 49
+May 06, 2025 2:32:04 AM Logging logInfoMessage
+INFO: Cards left in deck deal -> 48
+May 06, 2025 2:32:42 AM Logging logInfoMessage
+INFO: 52
+May 06, 2025 2:32:42 AM Logging logInfoMessage
+INFO: Deck correctly reset
+May 06, 2025 2:32:45 AM Logging logInfoMessage
+INFO: Deck correctly reset
+May 06, 2025 2:32:45 AM Logging logInfoMessage
+INFO: Cards left in deck deal -> 52
+May 06, 2025 2:32:45 AM Logging logInfoMessage
+INFO: Cards left in deck deal -> 51
+May 06, 2025 2:32:45 AM Logging logInfoMessage
+INFO: Cards left in deck deal -> 50
+May 06, 2025 2:32:45 AM Logging logInfoMessage
+INFO: Cards left in deck deal -> 49
+May 06, 2025 2:33:58 AM Logging logInfoMessage
+INFO: 52
+May 06, 2025 2:33:58 AM Logging logInfoMessage
+INFO: Deck correctly reset
+May 06, 2025 2:34:00 AM Logging logInfoMessage
+INFO: 52
+May 06, 2025 2:34:00 AM Logging logInfoMessage
+INFO: Deck correctly reset
+May 06, 2025 2:34:22 AM Logging logInfoMessage
+INFO: 52
+May 06, 2025 2:34:22 AM Logging logInfoMessage
+INFO: Deck correctly reset
+May 06, 2025 2:37:17 AM Logging logInfoMessage
+INFO: 52
+May 06, 2025 2:37:17 AM Logging logInfoMessage
+INFO: Deck correctly reset
+May 06, 2025 2:37:21 AM Logging logInfoMessage
+INFO: Deck correctly reset
+May 06, 2025 2:37:21 AM Logging logInfoMessage
+INFO: Cards left in deck deal -> 52
+May 06, 2025 2:37:21 AM Logging logInfoMessage
+INFO: Cards left in deck deal -> 51
+May 06, 2025 2:37:21 AM Logging logInfoMessage
+INFO: Cards left in deck deal -> 50
+May 06, 2025 2:37:21 AM Logging logInfoMessage
+INFO: Cards left in deck deal -> 49
+May 06, 2025 2:37:29 AM Logging logInfoMessage
+INFO: Cards left in deck deal -> 48
